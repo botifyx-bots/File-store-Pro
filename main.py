@@ -7,7 +7,7 @@ from config import *
 from threading import Thread
 
 # 🚀 Start Flask FIRST for Render health check
-#Thread(target=run_flask, daemon=True).start()
+Thread(target=run_flask, daemon=True).start()
 
 async def main():
     app = []
