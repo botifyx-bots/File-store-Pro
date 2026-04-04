@@ -1,4 +1,5 @@
-#SahilxCodes
+# Botifyx bots 
+# @BotifyX_Pro_Botz
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
