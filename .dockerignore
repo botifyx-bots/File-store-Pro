@@ -1,0 +1,40 @@
+# ================================================
+# File-Store-Pro — .dockerignore
+# ================================================
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Session files (mounted as volume at runtime)
+*.session
+sessions/
+
+# Logs (mounted as volume at runtime)
+*.log
+logs/
+
+# Docs
+README.md
+*.md
+docs/
+.github/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (not needed inside image)
+docker-compose.yml
