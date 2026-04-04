@@ -1,0 +1,67 @@
+# ================================================
+# File-Store-Pro — docker-compose.yml
+# Platform: Local Machine / VPS
+# Made by: botifyx-bots | @BotifyX_Pro_Botz
+# ------------------------------------------------
+# ⚠️  Edit config.py with your values BEFORE running.
+# ------------------------------------------------
+# Usage:
+#   docker-compose up -d        start in background
+#   docker-compose logs -f      view live logs
+#   docker-compose down         stop everything
+#   docker-compose restart bot  restart only the bot
+# ================================================
+
+version: "3.9"
+
+services:
+
+  # ── The Bot ───────────────────────────────────
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file-store-pro
+    restart: unless-stopped
+    command: python main.py
+
+    ports:
+      - "5010:5010"             # PORT from config.py
+
+    volumes:
+      - ./sessions:/app/sessions   # Persist Pyrogram session files
+      - ./bot.log:/app/bot.log     # Persist logs
+
+    depends_on:
+      mongo:
+        condition: service_healthy
+
+    networks:
+      - botnet
+
+  # ── MongoDB (Local / VPS only) ────────────────
+  # ⚠️  Comment out this entire block if using MongoDB Atlas
+  # (set DB_URI in config.py to your Atlas URI instead)
+  mongo:
+    image: mongo:6.0
+    container_name: file-store-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - botnet
+
+volumes:
+  mongo_data:
+
+networks:
+  botnet:
+    driver: bridge
