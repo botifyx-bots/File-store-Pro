@@ -1,4 +1,5 @@
-#(©)Codeflix Bots (ProYato)
+# Botifyx bots 
+# @BotifyX_Pro_Botz
 
 from aiohttp import web
 from .route import routes
