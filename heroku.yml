@@ -1,0 +1,18 @@
+# ================================================
+# File-Store-Pro — heroku.yml
+# Platform: Heroku (Container Stack)
+# Made by: botifyx-bots | @BotifyX_Pro_Botz
+# ------------------------------------------------
+# Setup commands:
+#   heroku create your-app-name
+#   heroku stack:set container -a your-app-name
+#   git push heroku main
+#   heroku ps:scale web=1 -a your-app-name
+# ================================================
+
+build:
+  docker:
+    web: Dockerfile
+
+run:
+  web: python main.py
