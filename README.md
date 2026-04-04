@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/6cfe41b279bbe53061fc4591d115038dc36acc593bb6062d0692b8a0810d1bde/68747470733a2f2f74652e6c656772612e70682f66696c652f3066373538333231613932613934323861366334382e6a7067" width="400"/>
+  <img src="https://4kwallpapers.com/images/walls/thumbs_3t/13875.jpg" width="400"/>
 </p>
 
 <p align="center">
