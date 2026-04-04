@@ -282,7 +282,7 @@ You can freely host this repo yourself. All we ask is that you provide proper cr
 |---|---|
 | [BotifyX](https://github.com/botifyx-bots) | Developer & Maintainer |
 | [彡 ΔNI_OTΔKU 彡](https://t.me/ITsANIMEN) | Core Concept |
-| [ProTato](https://github.com/proyato) | Base Repo |
+| [ProYato](https://github.com/proyato) | Base Repo |
 
 ---
 
