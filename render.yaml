@@ -1,0 +1,23 @@
+# ================================================
+# File-Store-Pro — render.yaml
+# Platform: Render.com
+# Made by: botifyx-bots | @BotifyX_Pro_Botz
+# ------------------------------------------------
+# ⚠️  Edit config.py with your values BEFORE deploying.
+# Push to GitHub → Render auto-detects this file.
+# ------------------------------------------------
+# NOTE: Render injects PORT=10000 automatically.
+# Flask in bot.py reads os.environ.get("PORT", 10000)
+# so it will correctly bind to Render's port.
+# Your config.py PORT ('5010') is used by aiohttp only.
+# ================================================
+
+services:
+  - type: web
+    name: file-store-pro-bot
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free                  # free / starter / standard / pro
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /          # Flask "/" → "Bot is running!"
