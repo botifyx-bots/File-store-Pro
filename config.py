@@ -9,18 +9,18 @@ OWNER_ID = 7156099919
 MSG_EFFECT = 5046509860389126442
 
 SHORT_URL = "shrinkme.io" # shortner url 
-SHORT_API = "e75f29485ddb045e6887d284f762f3daeb84f869"
-SHORT_TUT = "https://t.me/ANIME_X_FLEX/19"
+SHORT_API = "xxxxxxxxxxx45e6887xxxxxxxxxxx" # shortner API
+SHORT_TUT = "https://t.me/ANIME_X_FLEX/19" # shortner tutorial link
 
 # Bot Configuration
-SESSION = "SASUKE"
-TOKEN = "8207472717:AAHLdPsRtYZsXErJouz3z2WfTxIDLbdW6hA"
-API_ID = "27226524"
-API_HASH = "a14c9cd4629fde6b4d9b8c77df00fb00"
+SESSION = "BotifyX-Botz"
+TOKEN = "82074727111:xxxxxxxxxxxxxxxxxx" # Bot token
+API_ID = "xxxxxx" # API ID
+API_HASH = "xxxxxxxxxxxxxxxxxx" # API HASH
 WORKERS = 5
 
-DB_URI = "mongodb+srv://ANI_OTAKU:ANI_OTAKU@cluster0.t3frstc.mongodb.net/?appName=Cluster0"
-DB_NAME = "SASUKE-FILESTORE"
+DB_URI = "" # MongoDB URI
+DB_NAME = "BotifyX-Filestore"
 
 FSUBS = [[-1003483476894, True, 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
 # Database Channel (Primary)
@@ -36,7 +36,7 @@ AUTO_DEL = 300
 ADMINS = [7156099919]
 # Bot Settings
 DISABLE_BTN = True
-PROTECT = True
+PROTECT = True # For content protection stops message forwarding and copying from the bot and same goes for the screenshot
 
 # Messages Configuration
 MESSAGES = {
