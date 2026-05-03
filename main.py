@@ -1,7 +1,7 @@
 import asyncio
 asyncio.set_event_loop(asyncio.new_event_loop())
 
-from bot import Bot, web_app
+from bot import Bot, web_app, run_flask
 from pyrogram import compose
 from config import *
 from threading import Thread
